@@ -1,3 +1,57 @@
-header { 
+.container{
+    .row{
+        display: flex ; 
+        background-color: rgb(5, 31, 80);
+        justify-content: center;
+        align-items: center;
+        padding : 0 10% ; 
+
+        .button{
+            flex: 1;
+            .btn {
+                font-size: 50px ; 
+                background: transparent ; 
+                color: white
+            };
+        }
+        nav { 
+            flex : 2 ; 
+            ul {
+                display: flex ; 
+                li {
+                    list-style-type: none;
+                    a { 
+                        text-decoration: none ; 
+                        color: white;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+
+
+    }
+    .bg-dark {
+        img { 
+            width: 100%;
+        }
+    }
+}
+section:nth-last-of-type(1) { 
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
     
+    p { 
+        font-size: 30px;
+        padding : 0 10% ; 
+        span:nth-last-of-type(1) {
+            background-color: aqua;
+            color: white;
+        }
+        span:nth-last-of-type(2) { 
+            color: aqua;
+        }
+    }
+
 }
